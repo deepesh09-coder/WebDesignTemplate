@@ -1,0 +1,99 @@
+
+/* === CHANGES MADE FOR RESPONSIVENESS === */
+.abcd{
+    position: relative;
+    background-color: antiquewhite;
+}
+.abc{
+    /* Removed absolute positioning for better responsiveness */
+    position: static;
+    /* Adjusted margin for spacing */
+    margin-top: 20%;
+    margin-left: 8%;
+}
+.abc{
+    /* Fixed font-weight value */
+    font-weight: 900;
+    font-size: 30px;
+}
+#bt{
+    position: relative;
+    color: red;
+    border: 2px solid black;
+}
+.shape2{
+    position: relative;
+    bottom: 0; /* reset bottom */
+}
+.box{
+    border: 2px solid black;
+    /* Used max-width and auto height for responsiveness */
+    max-width: 100%;
+    height: auto;
+    margin-right: 10px;
+}
+.shape4{
+    background-image: url(/image/stats-bg.jpg);
+    width: 90vw;
+    height: auto; /* made height auto */
+    top: 50%;
+    opacity: 90%;
+}
+.abcdef, .abc1, .abc2{
+    height: auto;
+    width: 100%;
+    max-width: 100px;
+}
+.box2{
+    position: relative;
+    top: 125px;
+    color: white;
+}
+.shape5 a{
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    margin: 10px;
+}
+.shape6{
+    text-align: center;
+}
+.shape7{
+    text-align: center;
+}
+.shape8 img {
+    height: auto;
+    max-width: 100%;
+} 
+.shape9{
+    background-color: antiquewhite;
+}
+.shape11{
+    background-color: antiquewhite;
+}
+
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+    .abc {
+        margin-top: 10%;
+        margin-left: 5%;
+        font-size: 24px;
+    }
+    .box {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .shape4 {
+        width: 100%;
+        height: auto;
+    }
+    .shape8 img {
+        height: auto;
+        max-width: 100%;
+    }
+    #bt {
+        font-size: 18px;
+        border-width: 1px;
+    }
+}
+/* === END OF RESPONSIVE CHANGES === */
